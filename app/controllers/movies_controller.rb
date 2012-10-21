@@ -1,5 +1,5 @@
 class MoviesController < ApplicationController
-
+#I think they left out the migration step (rake db:migrate). Then after this migration…run rake db:test:prepare to setup your test database.
   def show
     id = params[:id] # retrieve movie ID from URI route
     @movie = Movie.find(id) # look up movie by unique ID
